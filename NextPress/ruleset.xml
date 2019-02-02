@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="NextPress">
+	<description>Rules for Coding Standards in NextPress products</description>
+
+	<arg name="tab-width" value="2"/>
+
+	<!-- Enable colors in report -->
+  <arg name="colors" />
+
+  <!-- Add source codes in the report -->
+  <arg value="s" />
+
+	<rule ref="WordPress-Core">
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing" />
+		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions" />
+		<exclude name="WordPress.PHP.YodaConditions" />
+		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing" />
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing" />
+		<exclude name="WordPress.WhiteSpace.OperatorSpacing" />
+		<exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="WordPress.WhiteSpace.CastStructureSpacing" />
+		<exclude name="WordPress.Arrays.CommaAfterArrayItem.NoComma" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket" />
+		<exclude name="Squiz.Commenting.ClosingDeclarationComment" />
+
+		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
+		<exclude name="PEAR.Functions.FunctionCallSignature" />
+		<!-- <exclude name="WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid" /> -->
+	</rule>
+	
+	<rule ref="WordPress-Docs">
+		<exclude name="Squiz.Commenting.LongConditionClosingComment.SpacingBefore"/>
+		<exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+	</rule>
+
+	<rule ref="Squiz.WhiteSpace.OperatorSpacing">
+		<properties>
+			<property name="ignoreNewlines" value="true"/>
+		</properties>
+	</rule>
+
+	<!-- Have code block comments look like // end foreach; etc. -->
+	<rule ref="NextPress.Commenting.LongConditionClosingComment">
+			<!-- <exclude name="NextPress.Commenting.LongConditionClosingComment.Invalid" /> -->
+			<properties>
+				<property name="lineLimit" value="1" />
+				<property name="commentFormat" value="// end %s;" />
+			</properties>
+	</rule>
+
+	<rule ref="NextPress.Commenting.ClosingDeclarationComment">
+	</rule>
+
+	<rule ref="Squiz.ControlStructures.ControlSignature">
+		<properties>
+			<property name="requiredSpacesBeforeColon" value="1" />
+		</properties>
+	</rule>
+
+	<rule ref="Generic.Formatting.SpaceAfterNot">
+    <properties>
+        <property name="spacing" value="0" />
+    </properties>
+	</rule>
+
+	<!-- Doc block alignments -->
+	<rule ref="Squiz.Commenting.DocCommentAlignment" />
+
+	<rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
+		<properties>
+			<property name="equalsSpacing" value="1"/>
+			<property name="requiredSpacesAfterOpen" value="0"/>
+			<property name="requiredSpacesBeforeClose" value="0"/>
+		</properties>
+	</rule>
+	<rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeClose">
+		<severity>0</severity>
+	</rule>
+
+	<!-- Covers rule: Call a function, like so: my_function( $param1, func_param( $param2 ) ); -->
+	<rule ref="PEAR.Functions.FunctionCallSignature">
+		<properties>
+			<property name="requiredSpacesAfterOpen" value="0"/>
+			<property name="requiredSpacesBeforeClose" value="0"/>
+
+			<!-- ... and for multi-line function calls, there should only be one parameter per line. -->
+			<property name="allowMultipleArguments" value="false"/>
+		</properties>
+	</rule>
+
+	<rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing">
+		<properties>
+			<property name="spacing" value="0"/>
+			<property name="ignoreNewlines" value="true"/>
+		</properties>
+	</rule>
+  
+</ruleset>
