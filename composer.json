@@ -1,11 +1,16 @@
 {
     "name": "nextpress/nextpresscs",
     "description": "NextPress Coding Standards",
+    "minimum-stability": "RC",
     "authors": [
         {
             "name": "Arindo Duque",
-            "email": "aanduque@gmail.com"
+            "email": "arindo@wpultimo.com"
         }
     ],
-    "require": {}
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6",
+        "squizlabs/php_codesniffer": "^3.3.1"
+    }
 }
