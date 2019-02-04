@@ -1,7 +1,7 @@
 {
     "name": "nextpress/nextpresscs",
     "description": "NextPress Coding Standards",
-    "minimum-stability": "RC",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Arindo Duque",
