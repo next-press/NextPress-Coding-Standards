@@ -1,0 +1,12 @@
+{
+    "name": "annduque/nextpresscs",
+    "description": "NextPress Coding Standards",
+    "license": "GPL2.0",
+    "authors": [
+        {
+            "name": "Arindo Duque",
+            "email": "aanduque@gmail.com"
+        }
+    ],
+    "require": {}
+}
