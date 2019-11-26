@@ -1,5 +1,6 @@
 {
     "name": "nextpress/nextpresscs",
+    "type": "phpcodesniffer-standard",
     "description": "NextPress Coding Standards",
     "minimum-stability": "stable",
     "authors": [
@@ -11,6 +12,8 @@
     "license": "MIT",
     "require": {
         "php": ">=5.6",
-        "squizlabs/php_codesniffer": "^3.3.1"
+        "squizlabs/php_codesniffer": "^3.3.1",
+        "wp-coding-standards/wpcs": "^2.0.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
     }
 }
