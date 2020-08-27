@@ -22,6 +22,8 @@ export PATH="$HOME/.config/composer/vendor/bin/:$PATH"
 
 # Changelog
 
+### Version 0.0.3 - 27/08/2020
+
 ### Version 0.0.2
 * Changed: Global install via composer with PHP_CodeSniffer Standards Composer Installer;
 
