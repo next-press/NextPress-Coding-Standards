@@ -1,5 +1,6 @@
 {
     "name": "nextpress/nextpresscs",
+    "version": "3.0.0",
     "type": "phpcodesniffer-standard",
     "description": "NextPress Coding Standards",
     "minimum-stability": "stable",
